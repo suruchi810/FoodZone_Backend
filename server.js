@@ -12,7 +12,10 @@ const app = express()
 const port = 4000
 
 app.use(express.json())
-app.use(cors({ origin: "https://foodzone-frontend-hutg.onrender.com" }));
+app.use( cors({
+    origin: ["https://foodzone-frontend-hutg.onrender.com"],
+    credentials: true,
+  }));
 
 //DB connection
 connectDB();
