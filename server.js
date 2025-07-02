@@ -13,7 +13,7 @@ const port = 4000
 
 app.use(express.json())
 app.use( cors({
-    origin: ["https://foodzone-frontend-hutg.onrender.com"],
+    origin: ["https://foodzone-frontend-hutg.onrender.com", "https://foodzone-admin-hzpr.onrender.com"],
     credentials: true,
   }));
 
